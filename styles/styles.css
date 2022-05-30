@@ -5,15 +5,20 @@
   --main-text-color: #757575;
   --accent-color: #2196f3;
   --background: #2f303a;
+  --background-btn-color: #f5f4fa;
 }
 body {
   font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
 }
 .link {
   text-decoration: none;
 }
 .list {
   list-style: none;
+}
+.btn {
+  cursor: pointer;
 }
 /* --------HEADER-------- */
 .logo {
@@ -64,13 +69,13 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
+  background-color: var(--accent-color);
 }
 /* --------BODY-PLUSES-------- */
 .covered-title {
   display: none;
 }
 .pluses-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -78,7 +83,6 @@ body {
   color: var(--title-text-color);
 }
 .pluses-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -86,7 +90,6 @@ body {
 }
 /* --------BODY-WORK-------- */
 .section-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
@@ -101,7 +104,6 @@ body {
   color: var(--title-text-color);
 }
 .team-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.03em;
@@ -109,20 +111,18 @@ body {
 }
 /* --------FOOTER-------- */
 .address {
-  text-decoration: none;
+  font-style: normal;
 }
 .background {
   background-color: var(--background);
 }
 .address-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
 }
 .address-contact {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -136,16 +136,19 @@ body {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--btn-text-color);
+  background-color: var(--background-btn-color);
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--accent-color);
 }
 .card-title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 .card-text {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
