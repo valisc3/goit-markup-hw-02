@@ -6,10 +6,14 @@
   --accent-color: #2196f3;
   --background: #2f303a;
   --background-btn-color: #f5f4fa;
+  --hero-text-color: #ffffff;
 }
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--main-text-color);
+  background-color: #ffffff;
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 .link {
   text-decoration: none;
@@ -26,12 +30,14 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .logo-accent {
   color: var(--accent-color);
+}
+.logo-footer {
+  color: #ffffff;
 }
 .nav-link,
 .nav-contact {
@@ -50,6 +56,9 @@ body {
 .nav-contact:focus {
   color: var(--action-text-color);
 }
+.current {
+  color: var(--action-text-color);
+}
 /* --------BODY-HERO-------- */
 .hero {
   background-color: var(--background);
@@ -60,53 +69,65 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--hero-text-color);
 }
 .hero-btn {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--hero-text-color);
   background-color: var(--accent-color);
 }
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
 /* --------BODY-PLUSES-------- */
-.covered-title {
-  display: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .pluses-title {
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
 .pluses-text {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
 /* --------BODY-WORK-------- */
 .section-title {
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 /* --------BODY-TEAM-------- */
+.team-section-background {
+  background-color: #f5f4fa;
+}
 .team-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .team-text {
   font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0.03em;
+  line-height: 1.18;
   color: var(--main-text-color);
 }
 /* --------FOOTER-------- */
@@ -116,17 +137,22 @@ body {
 .background {
   background-color: var(--background);
 }
+
 .address-text {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 .address-contact {
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.address-text:hover,
+.address-text:focus,
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--action-text-color);
 }
 /* --------PRODUCTS-------- */
 .filter-btn {
@@ -134,12 +160,12 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  letter-spacing: 0.03em;
   color: var(--btn-text-color);
   background-color: var(--background-btn-color);
 }
 .filter-btn:hover,
 .filter-btn:focus {
+  color: var(--hero-text-color);
   background-color: var(--accent-color);
 }
 .card-title {
@@ -151,6 +177,5 @@ body {
 .card-text {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
